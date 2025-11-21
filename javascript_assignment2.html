@@ -1,0 +1,23 @@
+<html> 
+  <body> 
+    <h3>Today Fruits</h3> 
+    <ul id="fruit-list"></ul> 
+    <hr/> 
+    <h3>Today Vegetables</h3> 
+    <ul id="veg-list"></ul> 
+    <script>
+        let fruits=["Apple","Banana","Orange","Mango","Strawberry"];
+        fruits.forEach(element => {
+            
+            document.getElementById("fruit-list").innerHTML += `<li>${element}</li>`;
+
+        });
+        let veg=["Carrot","Broccoli","Spinach","Tomato","Cucumber"];
+        veg.forEach(element => {   
+            document.getElementById("veg-list").innerHTML += `<li>${element}</li>`;
+
+        });
+
+    </script> 
+  </body> 
+</html> 
